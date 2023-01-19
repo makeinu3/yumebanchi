@@ -2,19 +2,32 @@
 <html>
   <head>
     <title>yumebanchi</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header>
-      <h1>yumebanchi</h1>
-      <i class="fas fa-cog"></i>
+      <h1 class="text-center">yumebanchi</h1>
+      <div class="text-right pr-5"><i class="fas fa-cog"></i></div>
     </header>
-    <%= yield %>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <div class="col-md-6 mx-auto px-5 d-flex justify-content-between">
+        <i class="fas fa-home"></i>
+        <i class="far fa-calendar-alt"></i>
+        <i class="fas fa-tasks"></i>
+        <i class="fas fa-heartbeat"></i>
+        <i class="fas fa-wallet"></i>
+      </div>
+    </footer>
   </body>
 </html>
