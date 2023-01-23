@@ -32,3 +32,10 @@ footer {
   bottom: 0;
   font-size: 30px;
 }
+
+.col-md-5 {
+  height: 150px;
+  margin: 10px auto;
+  background-color: rgba(227, 227, 227, 0.3);
+  border-radius: 30px;
+}
